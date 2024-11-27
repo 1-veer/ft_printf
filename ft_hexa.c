@@ -12,18 +12,18 @@
 
 #include "ft_printf.h"
 
-int ft_hexa(unsigned long int n, char *str)
+int	ft_hexa(unsigned long int n, char *str)
 {
-	int i;
-	int count;
-	char buff[16];
+	int		i;
+	int		count;
+	char	buff[16];
 
 	if (n == 0)
 		return (ft_putchar('0'));
 	i = 0;
 	while (n != 0)
 	{
-		buff[i]=str[n % 16];
+		buff[i] = str[n % 16];
 		n = n / 16;
 		i++;
 	}

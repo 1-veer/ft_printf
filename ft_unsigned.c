@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_unsigned.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abougati <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: abougati <abougati@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 22:25:19 by abougati          #+#    #+#             */
-/*   Updated: 2024/11/24 22:28:43 by abougati         ###   ########.fr       */
+/*   Updated: 2024/11/27 15:24:35 by abougati         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	get_len(unsigned int n)
 	len = 0;
 	if (n == 0)
 		return (1);
-	len += (n < 0);
 	while (n != 0)
 	{
 		len++;
@@ -30,14 +29,9 @@ int	get_len(unsigned int n)
 
 int	ft_unsigned(unsigned int n)
 {
-	int count;
-	
+	int	count;
+
 	count = get_len(n);
-	if (n < 0)
-	{
-		ft_putchar('-');
-		n*= -1;
-	}
 	if (n < 10)
 		ft_putchar(n + '0');
 	else

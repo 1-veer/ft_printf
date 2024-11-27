@@ -31,8 +31,8 @@ int	get_length(int n)
 int	ft_putnbr(int n)
 {
 	unsigned int	nbr;
-	int count;
-	
+	int				count;
+
 	count = get_length(n);
 	if (n < 0)
 	{
@@ -50,4 +50,3 @@ int	ft_putnbr(int n)
 	}
 	return (count);
 }
-

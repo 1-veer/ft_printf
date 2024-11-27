@@ -14,11 +14,11 @@
 
 int	ft_address(unsigned long int address)
 {
-	int count;
+	int	count;
 
 	count = 0;
-	if(address == 0)
-		return(ft_putstr("(nil)"));
-       	count = count + ft_putstr("0x") + ft_hexa(address ,"0123456789abcdef");
+	if (address == 0)
+		return (ft_putstr("(nil)"));
+	count = count + ft_putstr("0x") + ft_hexa(address, "0123456789abcdef");
 	return (count);
 }

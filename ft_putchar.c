@@ -12,9 +12,9 @@
 
 #include "ft_printf.h"
 
-int ft_putchar(char a)
+int	ft_putchar(char a)
 {
-	int count;
+	int	count;
 
 	count = write(1, &a, 1);
 	return (count);
